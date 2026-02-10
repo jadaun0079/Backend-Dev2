@@ -7,7 +7,7 @@ export const getUsers = async (req, res) => {
 
     let filter = {};
 
-    // if name query param exists -> filter by name
+    
     if (name) {
       filter.name = { $regex: name, $options: "i" }; // case-insensitive search
     }
